@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Online Fridge</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Online Fridge</h1>
+      <div
+        class="ingredient-input"
+        id="ingredient-section"
+        style="display: none"
+      >
+        <input type="text" id="ingredient" placeholder="Add an ingredient" />
+        <button id="add-button">Add Ingredient</button>
+      </div>
+
+      <div class="popular-ingredients">
+        <h2>Popular Ingredients:</h2>
+        <div id="popular-ingredients">
+          <button class="ingredient-button">Eggs</button>
+          <button class="ingredient-button">Tomatoes</button>
+          <button class="ingredient-button">Cheese</button>
+          <button class="ingredient-button">Apples</button>
+          <button class="ingredient-button">Bananas</button>
+          <button class="ingredient-button">Garlic</button>
+          <button class="ingredient-button">Basil</button>
+          <button class="ingredient-button">Pasta</button>
+        </div>
+      </div>
+
+      <h2>Your Ingredients:</h2>
+      <ul id="ingredient-list"></ul>
+    </div>
+
+    <div class="container">
+      <h2>Describe Your Mood:</h2>
+      <select id="mood-selector">
+        <option value="">--Select your mood--</option>
+        <option value="Tired">Tired</option>
+        <option value="Happy">Happy</option>
+        <option value="Stressed">Stressed</option>
+        <option value="Hungry">Hungry</option>
+        <option value="Creative">Creative</option>
+        <option value="Comfort">Comfort</option>
+        <option value="Excited">Excited</option>
+      </select>
+      <input
+        type="text"
+        id="mood-input"
+        placeholder="Or describe your mood..."
+      />
+    </div>
+
+    <div class="container">
+      <h2>Describe Your Day:</h2>
+      <select id="day-selector">
+        <option value="">--Select your day type--</option>
+        <option value="Long day at work">Long day at work</option>
+        <option value="Long day at school">Long day at school</option>
+        <option value="Busy day with meetings">Busy day with meetings</option>
+        <option value="Relaxing day">Relaxing day</option>
+        <option value="Errands and chores">Errands and chores</option>
+      </select>
+      <input
+        type="text"
+        id="day-description"
+        placeholder="Or describe your day..."
+      />
+    </div>
+
+    <div class="container">
+      <h2>Select Your Preferred Cuisine:</h2>
+      <select id="cuisine-selector">
+        <option value="">--Select your cuisine--</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Indian">Indian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Moroccan">Moroccan</option>
+        <option value="French">French</option>
+        <option value="Japanese">Japanese</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <button id="suggest-button">Get Recipe Suggestions</button>
+      <h2>Recipe Suggestions:</h2>
+      <ul id="recipe-suggestions"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
